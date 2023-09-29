@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Roboto Mono', monospace;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #FFF786;
+		}
+
+		.border {
+			border: 2px solid #000000;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #F8A33C;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border background">
+		<a id="home" onclick="navigate(this.id)" href="#"> <img src="https://static.wikia.nocookie.net/gudetama-tap/images/e/eb/Icon_Flower_Pot.png/revision/latest?cb=20191101104559" height="16"></img> Home</a>
+		<a id="productivity" onclick="navigate(this.id)" href="#"> <img src="https://static.wikia.nocookie.net/gudetama-tap/images/d/db/Icon_Wave.png/revision/latest?cb=20191101114642" height="16"> productivity</a>
+		<a id="school" onclick="navigate(this.id)" href="#"> <img src="https://static.wikia.nocookie.net/gudetama-tap/images/d/db/Icon_Wave.png/revision/latest?cb=20191101114642" height="16" /> school</a>
+		<a id="leisure" onclick="navigate(this.id)" href="#"> <img src="https://static.wikia.nocookie.net/gudetama-tap/images/d/db/Icon_Wave.png/revision/latest?cb=20191101114642" height="16"> leisure</a>
+		<a id="lifestyle" onclick="navigate(this.id)" href="#"> <img src="https://static.wikia.nocookie.net/gudetama-tap/images/d/db/Icon_Wave.png/revision/latest?cb=20191101114642" height="16"> lifestyle</a>
+		<a id="nutrition" onclick="navigate(this.id)" href="#"> <img src="https://static.wikia.nocookie.net/gudetama-tap/images/d/db/Icon_Wave.png/revision/latest?cb=20191101114642" height="16"> nutrition</a>
+		<a id="health" onclick="navigate(this.id)" href="#"> <img src="https://static.wikia.nocookie.net/gudetama-tap/images/d/db/Icon_Wave.png/revision/latest?cb=20191101114642" height="16"> health</a>
+		<a id="fitness" onclick="navigate(this.id)" href="#"> <img src="https://static.wikia.nocookie.net/gudetama-tap/images/d/db/Icon_Wave.png/revision/latest?cb=20191101114642" height="16"> fitness</a>
+		<a id="wellness" onclick="navigate(this.id)" href="#"> <img src="https://static.wikia.nocookie.net/gudetama-tap/images/d/db/Icon_Wave.png/revision/latest?cb=20191101114642" height="16"> wellness</a>
+		<a id="journal" onclick="navigate(this.id)" href="#"> <img src="https://static.wikia.nocookie.net/gudetama-tap/images/d/db/Icon_Wave.png/revision/latest?cb=20191101114642" height="16"> journal</a>
+		<a id="finances" onclick="navigate(this.id)" href="#"> <img src="https://static.wikia.nocookie.net/gudetama-tap/images/d/db/Icon_Wave.png/revision/latest?cb=20191101114642" height="16"> finances</a>
+		<a id="personal" onclick="navigate(this.id)" href="#"> <img src="https://static.wikia.nocookie.net/gudetama-tap/images/d/db/Icon_Wave.png/revision/latest?cb=20191101114642" height="16"> personal</a>
+		<a id="manifestation" onclick="navigate(this.id)" href="#"> <img src="https://static.wikia.nocookie.net/gudetama-tap/images/d/db/Icon_Wave.png/revision/latest?cb=20191101114642" height="16"> manifestation</a>
+		<a id="others" onclick="navigate(this.id)" href="#"> <img src="https://static.wikia.nocookie.net/gudetama-tap/images/d/db/Icon_Wave.png/revision/latest?cb=20191101114642" height="16"> others</a>
+		
+	</nav>
+
+
+	<script>
+
+		let direction = "vertical";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://example.com", '_blank').focus();
+			else if (id == 'productivity')
+				window.open("https://example.com", '_blank').focus();
+			else if (id == 'school')
+				window.open("https://example.com", '_blank').focus();
+			else if (id == 'leisure')
+				window.open("https://example.com", '_blank').focus();
+			else if (id == 'lifestyle')
+				window.open("https://example.com", '_blank').focus();
+			else if (id == 'nutrition')
+				window.open("https://example.com", '_blank').focus();
+			else if (id == 'health')
+				window.open("https://example.com", '_blank').focus();
+			else if (id == 'fitness')
+				window.open("https://example.com", '_blank').focus();
+			else if (id == 'wellness')
+				window.open("https://example.com", '_blank').focus();
+			else if (id == 'journal')
+				window.open("https://example.com", '_blank').focus();
+			else if (id == 'finances')
+				window.open("https://example.com", '_blank').focus();
+			else if (id == 'personal')
+				window.open("https://example.com", '_blank').focus();
+			else if (id == 'manifestation')
+				window.open("https://example.com", '_blank').focus();
+			else if (id == 'others')
+				window.open("https://example.com", '_blank').focus();
+		}
+	</script>
+
+
+</body>
+
+</html>
